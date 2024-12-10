@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import ProductCard from "./ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper components
 import "swiper/css"; // Import Swiper styles
@@ -15,6 +15,16 @@ const ReactCarousal = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      const swiper = swiperRef.current.swiper;
+      swiper.params.navigation.prevEl = prevRef.current;
+      swiper.params.navigation.nextEl = nextRef.current;
+      swiper.navigation.init();
+      swiper.navigation.update();
+    }
+  }, []);
   return (
     <div>
       {/* Custom Previous Button */}
