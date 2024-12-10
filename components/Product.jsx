@@ -38,21 +38,22 @@ const Product = () => {
         <div className="flex flex-col-reverse lg:flex-row gap-4 bg-[#F8F6F4] p-4 md:p-8 rounded-xl">
           <div className="flex lg:flex-col gap-3">
             <div className="w-16 h-16  cursor-pointer rounded-md overflow-hidden">
-              <Image className="object-cover" src={assets.table} alt="" />
+              <Image className="object-cover" src={assets.table} alt="" loading="lazy" />
             </div>
             <div className="w-16 h-16  cursor-pointer rounded-md overflow-hidden opacity-50">
-              <Image className="object-cover" src={assets.table} alt="" />
+              <Image className="object-cover" src={assets.table} alt="" loading="lazy" />
             </div>
             <div className="w-16 h-16  cursor-pointer rounded-md overflow-hidden opacity-50">
-              <Image className="object-cover" src={assets.table} alt="" />
+              <Image className="object-cover" src={assets.table} alt="" loading="lazy" />
             </div>
             <div className="w-16 h-16  cursor-pointer rounded-md overflow-hidden opacity-50">
-              <Image className="object-cover" src={assets.table} alt="" />
+              <Image className="object-cover" src={assets.table} alt="" loading="lazy" />
             </div>
           </div>
 
           <Image
             className="flex-1 w-full h-[500px] rounded-md"
+            loading="lazy"
             src={assets.main_product}
             alt=""
           />
