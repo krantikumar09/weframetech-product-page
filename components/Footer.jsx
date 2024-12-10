@@ -140,7 +140,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-500 text-sm">
               <li>À propos</li>
               <li>Livraisons & Reprises</li>
-              <li>Mode d'emploi</li>
+              <li>Mode d&apos;emploi</li>
               <li>FAQ</li>
             </ul>
           </div>
@@ -159,7 +159,7 @@ const Footer = () => {
             <h3 className="font-semibold text-gray-700 mb-3">MON COMPTE</h3>
             <ul className="space-y-2 text-gray-500 text-sm">
               <li>Accéder à mon compte</li>
-              <li>Ma liste d'envie</li>
+              <li>Ma liste d&apos;envie</li>
               <li>Créer un compte</li>
               <li>Mot de passe oublié</li>
             </ul>
